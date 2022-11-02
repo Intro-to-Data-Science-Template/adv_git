@@ -19,6 +19,9 @@ caffeine_columns =  colnames(survey)[grepl("_coffee", colnames(survey)) | grepl(
 survey$week_caffeine = rowSums(survey[ , caffeine_columns])
 
 ## NEW FEATURE HERE ####
+x = survey$mint_choc
+
+survey$mint_opinions <- ifelse(x>3, "likes mint", "dislikes mint")
 
 # data write ####
 
