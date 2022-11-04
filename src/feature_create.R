@@ -19,7 +19,7 @@ caffeine_columns =  colnames(survey)[grepl("_coffee", colnames(survey)) | grepl(
 survey$week_caffeine = rowSums(survey[ , caffeine_columns])
 
 ## NEW FEATURE HERE ####
-
+#placeholder for new column
 # data write ####
 
 # save out
